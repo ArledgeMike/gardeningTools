@@ -1,3 +1,46 @@
-*{
-  background-color: #666;
+@import "_index.scss";
+
+.topiary__container {
+	width: 95%;
+	max-width: 960px;
+	margin: auto;
+	padding: $base-unit * 2;
+	flex-direction: column;
+	@include desktop() {
+		max-width: 1170px;
+		width: 100%;
+	}
+}
+
+*[contenteditable="true"]:empty {
+	display: none;
+}
+
+.colors {
+	width: 100%;
+	display: flex;
+	margin-bottom: $base-unit * 2;
+
+	&__swatch {
+		height: 50px;
+		width: 100%;
+		&--green-dark {
+			background-color: var(--green-dark);
+		}
+		&--green {
+			background-color: var(--green);
+		}
+		&--green-light {
+			background-color: var(--green-light);
+		}
+		&--gray-dark {
+			background-color: var(--gray-dark);
+		}
+		&--gray {
+			background-color: var(--gray);
+		}
+		&--gray-light {
+			background-color: var(--gray-light);
+		}
+	}
 }

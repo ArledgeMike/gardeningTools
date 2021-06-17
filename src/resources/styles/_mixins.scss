@@ -1,0 +1,19 @@
+//mixins for device break points
+@mixin tablet {
+	@media all and (min-width: $break2) {
+		@content;
+	}
+}
+
+@mixin desktop {
+	@media all and (min-width: $break3) {
+		@content;
+	}
+}
+
+//more versatile break mixin
+@mixin breakpoint($breakpoint) {
+	@media all and (min-width: $breakpoint) {
+		@content;
+	}
+}

@@ -1,8 +1,6 @@
 import './index.scss';
+import stepInput from './resources/scripts/InputStep';
 
-import tellIt from './resources/scripts/page.js';
+const stepOne = new stepInput('numberInputOne');
 
-import './resources/images/headerImage.png';
-import './resources/images/favicon.png';
 
-tellIt("Hello World");
