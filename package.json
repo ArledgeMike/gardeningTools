@@ -1,7 +1,7 @@
 {
-  "name": "gardenbed",
+  "name": "gardentools",
   "version": "1.0.0",
-  "description": "The basics for creating small front end focused web apps.",
+  "description": "Simple style and component library from the Topiary Wolf.",
   "main": "./src/index.js",
   "scripts": {
     "dev": "NODE_ENV=development webpack-dev-server --content-base dist --hot --mode development --open --host 0.0.0.0",
